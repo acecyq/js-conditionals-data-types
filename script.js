@@ -11,12 +11,12 @@
 // Write your solution below.
 // ====================================================================
 
-
-
-
-
-
-
+// var number1 = prompt("Enter number 1");
+// var number2 = prompt("Enter number 2");
+// var x = parseFloat(number1);
+// var y = parseFloat(number2);
+// var result = Math.abs(x - y);
+// console.log(result);
 
 
 
@@ -37,19 +37,39 @@
 // Write your solution below
 // ====================================================================
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+// var number3 = prompt("Enter a number");
+// var placing = "";
+// if (number3.length === 1) {
+// 	switch(number3) {
+// 		case "1":
+// 			placing = number3 + "st";
+// 			break;
+// 		case "2":
+// 			placing = number3 + "nd";
+// 			break;
+// 		case "3":
+// 			placing = number3 + "rd";
+// 			break;
+// 		default:
+// 			placing = number3 + "th";
+// 	}
+// } else if (number3.length >= 2) {
+// 	switch(true) {
+// 		case (number3.slice(-2) === "11" || number3.slice(-2) === "12" || number3.slice(-2) === "13"):
+// 			placing = number3 + "th";
+// 			break;
+// 		case (number3.slice(-1) === "1"):
+// 			placing = number3 + "st";
+// 			break;
+// 		case (number3.slice(-1) === "2"):
+// 			placing = number3 + "nd";
+// 			break;
+// 		case (number3.slice(-1) === "3"):
+// 			placing = number3 + "rd";
+// 			break;
+// 	}
+// }
+// console.log(placing);
 
 
 
@@ -61,9 +81,13 @@
 // Write your solution below.
 // =======================================================================
 
-
-
-
+// var randomInt = Math.floor(Math.random() * 11);
+// var userInput = prompt("Please enter an integer from 1 to 10:");
+// if (randomInt == userInput) {
+// 	console.log("You have gotten the right number!");
+// } else {
+// 	console.log("Sorry please try again.");
+// }
 
 
 
@@ -89,10 +113,18 @@
 // Write your solution below.
 // =====================================================================
 
-
-
-
-
+// function randomChar() {
+// 	var keyboard = "abcdefghijklmnopqrstuvwxyz0123456789";
+// 	var x = Math.floor(Math.random() * 36);
+// 	return keyboard[x];
+// }
+// var alphanumericString = "";
+// var alphanumericChar;
+// for (var i = 0; i < 6; i++) {
+// 	alphanumericChar = randomChar();
+// 	alphanumericString += alphanumericChar;
+// }
+// console.log(alphanumericString);
 
 
 
@@ -115,12 +147,11 @@
 // Write your solution below.
 // ====================================================================
 
-var testArray = [1, 2, 4, 8, 16, 32, 64, 128];
-
-
-
-
-
+// var testArray = [1, 2, 4, 8, 16, 32, 64, 128];
+// testArray.sort(function(a,b) {
+// 	return 0.5 - Math.random()
+// });
+// console.log(testArray);
 
 
 
@@ -160,26 +191,42 @@ var testArray = [1, 2, 4, 8, 16, 32, 64, 128];
 // Write your solution below.
 // ====================================================================
 
-var Phonebook = {
-    "Jason"         :   91216599,
-    "Amelie"        :   64239839,
-    "Sing An"       :   85404834,
-    "Ong Tng Kai"   :   94547788,
-    "Nelson Tan"    :   63396565
-};
-
-
-
-
-
-
-
-
-
-
-
-
-
+// var Phonebook = {
+//     "Jason"         :   91216599,
+//     "Amelie"        :   64239839,
+//     "Sing An"       :   85404834,
+//     "Ong Tng Kai"   :   94547788,
+//     "Nelson Tan"    :   63396565
+// };
+// var askName = prompt("Please enter a name:");
+// var newNumber = prompt("Please enter the new contact number:");
+// var newNumberValue = parseInt(newNumber);
+// if (Phonebook[askName] === undefined) {
+// 	console.log("This person does not exist in the phonebook."); 
+// } else {
+// 	console.log(askName + " : " + Phonebook[askName]);
+// }
+// Phonebook[askName] = newNumberValue;
+// console.log(Phonebook);
+// var eraseName = prompt("Will you like to erase a contact?");
+// if (Phonebook[eraseName] === undefined) {
+// 	console.log("This person does not exist in the phonebook.")
+// } else {
+// 	delete Phonebook[eraseName];
+// }
+// console.log(Phonebook);
+// var traceNumber = prompt("Please enter a contact number:");
+// var traceNumberValue = parseInt(traceNumber);
+// var noNumber = true;
+// for (contact in Phonebook) {
+// 	if (Phonebook[contact] === traceNumberValue) {
+// 		console.log(contact);
+// 		noNumber = false;
+// 	}
+// }
+// if (noNumber) {
+// 	console.log("Number does not exist in Phonebook");
+// }
 
 
 
@@ -208,15 +255,15 @@ var Phonebook = {
 // Write your solution below.
 // =====================================================================
 
-var MutateMeNot = [1, 2, 3, 4, 5];
-
-
-
-
-
-
-
-
+// var MutateMeNot = [1, 2, 3, 4, 5];
+// var number4 = prompt("Enter integer 1 (1 to 5):");
+// var number5 = prompt("Enter integer 2 (1 to 5):");
+// var num1 = parseInt(number4);
+// var num2 = parseInt(number5);
+// var m = MutateMeNot.indexOf(num1);
+// var n = MutateMeNot.indexOf(num2);
+// MutateMeNot[m] = num2;
+// MutateMeNot[n] = num1;
 
 
 
