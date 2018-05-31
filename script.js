@@ -21,9 +21,6 @@
 
 
 
-
-
-
 // ========================== Exercise 2 ==============================
 // Prompt the user for a number, then console.log its ordinal version.
 // For example, if the user inputs 1, the result should be '1st'.
