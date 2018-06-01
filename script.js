@@ -64,6 +64,9 @@
 // 		case (number3.slice(-1) === "3"):
 // 			placing = number3 + "rd";
 // 			break;
+// 		default:
+// 			placing = number3 + "th";
+// 			break;
 // 	}
 // }
 // console.log(placing);
@@ -78,14 +81,13 @@
 // Write your solution below.
 // =======================================================================
 
-// var randomInt = Math.floor(Math.random() * 11);
+// var randomInt = Math.floor(Math.random() * 10 + 1);
 // var userInput = prompt("Please enter an integer from 1 to 10:");
 // if (randomInt == userInput) {
 // 	console.log("You have gotten the right number!");
 // } else {
 // 	console.log("Sorry please try again.");
 // }
-
 
 
 
